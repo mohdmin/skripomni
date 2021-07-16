@@ -86,11 +86,10 @@ echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   - Dev/Main                : Edited by Lucky Wish"  | tee -a log-install.txt
+echo "   - Dev/Main                : Edited by OmniNET"  | tee -a log-install.txt
 echo "   - Telegram                : T.me/Lucky_Wish"  | tee -a log-install.txt
-echo "   - Instagram               : @Yoni_n07"  | tee -a log-install.txt
-echo "   - Whatsapp                : 082246360752"  | tee -a log-install.txt
-echo "   - Facebook                : https://www.facebook.com/Yoni.Nurwant0" | tee -a log-install.txt
+echo "   - Instagram               : @LuckyWish07"  | tee -a log-install.txt
+echo "   - Facebook                : Lucky Wish" | tee -a log-install.txt
 echo "---------------------------Script edited by OmniNET--------------------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 15 Sec"
