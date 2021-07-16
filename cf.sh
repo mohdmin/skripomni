@@ -5,9 +5,9 @@ NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 echo "Checking VPS"
 apt install jq curl -y
-DOMAIN=OmniNET.com
+DOMAIN=OmniNET.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.OmniNET.com
+SUB_DOMAIN=${sub}.OmniNET.id
 CF_ID=Hublawikipedia@gmail.com
 CF_KEY=f25b7d244a6cfef109a439606d8f3acb
 set -euo pipefail
