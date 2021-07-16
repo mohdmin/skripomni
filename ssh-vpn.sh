@@ -15,9 +15,9 @@ ver=$VERSION_ID
 country=ID
 state=DI Yogyakarta
 locality=Kulon Progo
-organization=OmniNET.com
-organizationalunit=OmniNET.com
-commonname=OmniNET.com
+organization=OmniNET.id
+organizationalunit=OmniNET.id
+commonname=id.OmniNET.id
 email=Hublawikipedia@gmail.com
 
 # simple password minimal
