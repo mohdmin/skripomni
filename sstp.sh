@@ -25,9 +25,9 @@ touch /var/lib/premium-script/data-user-sstp
 country=ID
 state=DI Yogyakarta
 locality=Kulon Progo
-organization=OmniNET.id
-organizationalunit=OmniNET.id
-commonname=id.OmniNET.id
+organization=OmniNET.com
+organizationalunit=OmniNET.com
+commonname=OmniNET.com
 email=Hublawikipedia@gmail.com
 
 #install sstp
