@@ -21,7 +21,7 @@ commonname=id.OmniNET.id
 email=Hublawikipedia@gmail.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/aryprabow/Script/main/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -88,14 +88,14 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/aryprabow/Script/main/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/aryprabow/Script/main/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/vps.conf"
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/aryprabow/Script/main/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -125,7 +125,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/aryprabow/Script/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -234,36 +234,36 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O add-host "https://raw.githubusercontent.com/aryprabow/Script/main/add-host.sh"
-wget -O about "https://raw.githubusercontent.com/aryprabow/Script/main/about.sh"
-wget -O menu "https://raw.githubusercontent.com/aryprabow/Script/main/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/aryprabow/Script/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/aryprabow/Script/main/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/aryprabow/Script/main/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/aryprabow/Script/main/member.sh"
-wget -O delete "https://raw.githubusercontent.com/aryprabow/Script/main/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/aryprabow/Script/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/aryprabow/Script/main/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/aryprabow/Script/main/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/aryprabow/Script/main/info.sh"
-wget -O ram "https://raw.githubusercontent.com/aryprabow/Script/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/aryprabow/Script/main/renew.sh"
-wget -O autokill "https://raw.githubusercontent.com/aryprabow/Script/main/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/aryprabow/Script/main/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/aryprabow/Script/main/tendang.sh"
-wget -O clear-log "https://raw.githubusercontent.com/aryprabow/Script/main/clear-log.sh"
-wget -O change-port "https://raw.githubusercontent.com/aryprabow/Script/main/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/aryprabow/Script/main/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/aryprabow/Script/main/port-ssl.sh"
-wget -O port-wg "https://raw.githubusercontent.com/aryprabow/Script/main/port-wg.sh"
-wget -O port-tr "https://raw.githubusercontent.com/aryprabow/Script/main/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/aryprabow/Script/main/port-sstp.sh"
-wget -O port-squid "https://raw.githubusercontent.com/aryprabow/Script/main/port-squid.sh"
-wget -O port-ws "https://raw.githubusercontent.com/aryprabow/Script/main/port-ws.sh"
-wget -O port-vless "https://raw.githubusercontent.com/aryprabow/Script/main/port-vless.sh"
-wget -O wbmn "https://raw.githubusercontent.com/aryprabow/Script/main/webmin.sh"
-wget -O xp "https://raw.githubusercontent.com/aryprabow/Script/main/xp.sh"
-wget -O kernel-updt "https://raw.githubusercontent.com/aryprabow/Script/main/kernel-update.sh"
+wget -O add-host "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/add-host.sh"
+wget -O about "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/about.sh"
+wget -O menu "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/member.sh"
+wget -O delete "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/restart.sh"
+wget -O speedtest "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/info.sh"
+wget -O ram "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/ram.sh"
+wget -O renew "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/renew.sh"
+wget -O autokill "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/autokill.sh"
+wget -O ceklim "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/tendang.sh"
+wget -O clear-log "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/clear-log.sh"
+wget -O change-port "https://raw.githubusercontent.comOmniN3T/AutoScriptVPS/main/change.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/port-ovpn.sh"
+wget -O port-ssl "https://raw.githubusercontent.comOmniN3T/AutoScriptVPS/main/port-ssl.sh"
+wget -O port-wg "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/port-wg.sh"
+wget -O port-tr "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/port-tr.sh"
+wget -O port-sstp "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/port-sstp.sh"
+wget -O port-squid "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/port-squid.sh"
+wget -O port-ws "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/port-ws.sh"
+wget -O port-vless "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/port-vless.sh"
+wget -O wbmn "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/webmin.sh"
+wget -O xp "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/xp.sh"
+wget -O kernel-updt "https://raw.githubusercontent.com/OmniN3T/AutoScriptVPS/main/kernel-update.sh"
 chmod +x add-host
 chmod +x menu
 chmod +x usernew
