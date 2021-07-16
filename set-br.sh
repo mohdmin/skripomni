@@ -16,7 +16,7 @@ tls_starttls on
 tls_trust_file /etc/ssl/certs/ca-certificates.crt
 
 account default
-host OmniNET.id
+host OmniNET.com
 port 587
 auth on
 user Hublawikipedia@gmail.com
