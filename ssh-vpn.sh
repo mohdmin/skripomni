@@ -15,9 +15,9 @@ ver=$VERSION_ID
 country=ID
 state=DI Yogyakarta
 locality=Kulon Progo
-organization=OmniNET.id
-organizationalunit=OmniNET.id
-commonname=id.OmniNET.id
+organization=OmniNET.com
+organizationalunit=OmniNET.com
+commonname=OmniNET.com
 email=Hublawikipedia@gmail.com
 
 # simple password minimal
@@ -209,7 +209,7 @@ echo; echo -n 'Creating cron to run script every minute.....(Default setting)'
 echo '.....done'
 echo; echo 'Installation has completed.'
 echo 'Config file is at /usr/local/ddos/ddos.conf'
-echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
+echo 'Please send in your comments and/or suggestions to Hublawikipedia@gmail.com'
 
 # banner /etc/issue.net
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
