@@ -13,6 +13,9 @@ If you following my instructure correctly you will doesnt have any problem
 
 if you found any bugs you can contact me
 
+command: menu
+File: http://ipvps:81
+
 Facebook : Lucky Wish
 
 Telegram : @Lucky_Wish
